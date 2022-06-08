@@ -1,0 +1,22 @@
+on: 
+  push:
+    branches:
+      - 'Docker'
+
+name: Docker build and push
+jobs:
+  build-and-push:
+    name: build and push image
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: build and push to docker
+      uses: docker/build-push-action@v3
+      with:
+        username: ${{ secrets.DOCKERHUB_USERNAME }}
+        password: ${{ secrets.DOCKERHUB_TOKEN }}
+        repository: ${{ github.repository }}
+        tag_with_ref: true
+        tag_with_sha: true
+        tags: ${{ github.sha }}
+    
