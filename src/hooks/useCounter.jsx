@@ -3,9 +3,9 @@ import { useState } from "react";
 export const useCounter = () => {
   const [counter, setCounter] = useState(0);
 
-  // const handleModifyCounter = (value) => {
-  //   setCounter(counter + value);
-  // };
+  const handleModifyCounter = (value) => {
+    setCounter(counter + value);
+  };
 
   const handleReset = () => {
     setCounter(0);
