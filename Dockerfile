@@ -11,7 +11,6 @@ RUN npm install
 
 COPY . .
 
-
 RUN npm run build
 
 FROM nginx:1.22.0-alpine as production-stage
