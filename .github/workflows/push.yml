@@ -31,5 +31,5 @@ jobs:
           context: .
           file: Dockerfile
           push: true
-          tags: JustaDeathKnight/gcs-testing:latest
+          tags: justadeathknight/gcs-testing:latest
           
