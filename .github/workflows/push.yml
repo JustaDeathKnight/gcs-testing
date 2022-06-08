@@ -5,6 +5,7 @@ on:
     branches:
       - 'Docker'
 
+name: deploy
 jobs:
   docker:
     runs-on: ubuntu-latest
@@ -30,6 +31,7 @@ jobs:
         with:
           context: .
           file: Dockerfile
+          repository: ${{ github.repository }}
           push: true
-          tags: justadeathknight/gcs-testing:latest
+          tags: ${{ github.sha }}
           
