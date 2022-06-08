@@ -1,8 +1,8 @@
 import React from "react";
 
-const ButtonCounter = ({ name, style, value = 1, action }) => {
+const ButtonCounter = ({ name, btnstyle, value = 1, action }) => {
   return (
-    <button aria-label={name} className={style} onClick={() => action(value)}>
+    <button aria-label={name} className={btnstyle} onClick={() => action(value)}>
       {name}
     </button>
   );
