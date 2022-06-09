@@ -84,6 +84,6 @@ describe("Counter", () => {
 
     userEvent.click(screen.getByLabelText("reset"));
 
-    expect(screen.getByRole("counter").textContent).toContain("Counter: 0");
+    expect(screen.getByRole("counter").textContent).toContain("Counter: 1");
   });
 });
