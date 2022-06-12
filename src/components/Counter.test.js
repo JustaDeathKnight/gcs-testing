@@ -17,7 +17,7 @@ describe("Counter", () => {
     render(<Counter />);
   });
 
-  // snapshot inicial, covertura? (snapshot) 
+  // snapshot inicial, covertura? (snapshot)
   it("Snapshot inicial", () => {
     expect(screen.getByRole("counter")).toMatchSnapshot();
   });
@@ -86,4 +86,5 @@ describe("Counter", () => {
 
     expect(screen.getByRole("counter").textContent).toContain("Counter: 0");
   });
+  
 });
