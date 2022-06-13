@@ -7,7 +7,6 @@ const Counter = () => {
   return (
     <>
       <div className="container text-center mt-4">
-        
         {/* eslint-disable-next-line */}
         <h2 role="counter">Counter: {counter}</h2>
 
@@ -27,7 +26,7 @@ const Counter = () => {
         </button>
 
         <ButtonCounter
-          name="incrementar"
+          name="incrementa"
           btnstyle="btn btn-outline-success"
           action={handleModifyCounter}
         />
