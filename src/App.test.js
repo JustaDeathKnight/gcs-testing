@@ -6,5 +6,4 @@ test("render principal", () => {
   render(<App />);
   const linkElement = screen.getByText("Counter: 0");
   expect(linkElement).toBeInTheDocument();
-  
 });

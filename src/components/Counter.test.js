@@ -86,5 +86,4 @@ describe("Counter", () => {
 
     expect(screen.getByRole("counter").textContent).toContain("Counter: 0");
   });
-  
 });

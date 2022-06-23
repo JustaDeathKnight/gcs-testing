@@ -26,7 +26,7 @@ const Counter = () => {
         </button>
 
         <ButtonCounter
-          name="incrementa"
+          name="incrementar"
           btnstyle="btn btn-outline-success"
           action={handleModifyCounter}
         />
