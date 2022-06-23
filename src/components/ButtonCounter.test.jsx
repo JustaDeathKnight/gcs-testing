@@ -29,5 +29,4 @@ describe("ButtonCounter", () => {
 
     expect(screen.getByLabelText("aumentar")).toBeInTheDocument();
   });
-  
 });
